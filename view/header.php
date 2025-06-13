@@ -8,7 +8,7 @@
     
 </head>
 <body>
-    <>
+    <header>
         <nav class="navbar">
           <a href="#" class="logo"><img src="logo pfe.jpg" alt="">BEAUTY</a>
           <ul>
@@ -18,7 +18,6 @@
             <li><a href="#">About Us</a></li>
           </ul>
         </nav>
-            
         <nav class="navbar">
           <a href="#" class="logo"><img src="Logo R Cosmetics (1).png" alt="">BEAUTY</a>
           <ul>
@@ -28,7 +27,6 @@
             <li><a href="#">About Us</a></li>
           </ul>
         </nav>
-
       </header>
 </body>
 </html>
