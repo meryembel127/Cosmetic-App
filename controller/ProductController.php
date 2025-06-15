@@ -1,5 +1,5 @@
 <?php
-require_once './model/Product.php'; // Make sure the Product class is loaded
+require_once './model/Product.php'; 
 
 class ProductsController {
     private $pdo;

@@ -10,7 +10,7 @@ body {
   color: #000;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,7 +50,7 @@ body {
   color: #3c1c4e;
 }
 
-/* Hero */
+
 .hero {
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@ body {
   padding: 50px;
   min-height: 60vh;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Optional for better readability */
+  background-color: rgba(255, 255, 255, 0.8); 
 }
 
 .content {
@@ -136,4 +136,83 @@ body {
 
 .text h3:hover {
   color: #8d4bb4;
+}
+
+.container{
+  min-height: 100vh;
+  background:#350d4c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container form{
+  
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px #4a265f;;
+  border-radius: 15px;
+  background: #8d4bb4;
+  backdrop-filter: blur(10px);
+flex-wrap: wrap;
+}
+.container form h1{
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+.container form input{
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border: bottom 2px solid #fff ;
+}
+
+.container form input::placeholder{
+  color: #fff;
+}
+.container form #LastName,
+.container form #Mobile{
+  margin-left:20px;
+}
+.container form h4{
+  color: #fff;
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+}
+.container form textarea{
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+textarea::-webkit-scrollbar{
+  background-color: #5e5e5e;
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: #5b5b5b;
+}
+.container form #button:hover{
+  opacity: 0,7;
+} 
+#center{
+  margin-top: 60PX;
+  margin-left: 300PX;
 }

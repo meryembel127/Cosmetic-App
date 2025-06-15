@@ -1,5 +1,5 @@
 <?php
-require_once './conn.php'; // This gives you $pdo
+require_once './models/config/conn.php'; 
 require_once './controller/ProductsController.php';
 
 $controller = new ProductsController($pdo);

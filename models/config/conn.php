@@ -1,6 +1,6 @@
 <?php
-$host = 'localhost'; // ✅ add this if not defined
-$db_name = 'your_db_name';
+$host = 'localhost'; 
+$db_name = '';
 $username = 'your_username';
 $password = 'your_password';
 
@@ -10,7 +10,7 @@ try {
     // Optional: set error mode
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage(); // ✅ use . instead of +
+    echo "Connection failed: " . $e->getMessage();
     exit;
 }
 ?>
