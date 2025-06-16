@@ -2,7 +2,7 @@
 <header>
   <nav class="navbar">
     <a href="#" class="logo">
-      <img src="./../src/logo pfe.jpg" alt="Logo">
+      <img src="././src/logo pfe.jpg" alt="Logo">
     </a>
     <ul>
       <li><a href="#">Home</a></li>

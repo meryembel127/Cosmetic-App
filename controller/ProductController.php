@@ -1,5 +1,5 @@
 <?php
-require_once './model/Product.php'; 
+require_once './models/Product.php'; 
 
 class ProductsController {
     private $pdo;
@@ -11,7 +11,7 @@ class ProductsController {
     public function index(): void {
         $productModel = new Product($this->pdo);
         $products = $productModel->getAll();
-        include './view/index.php';
+        include './view/home.php';
     }
 
     public function store($data): void {

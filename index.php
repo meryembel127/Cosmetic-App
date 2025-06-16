@@ -1,6 +1,6 @@
 <?php
 require_once './models/config/conn.php'; 
-require_once './controller/ProductsController.php';
+require_once './controller/ProductController.php';
 
 $controller = new ProductsController($pdo);
 $controller->index();
