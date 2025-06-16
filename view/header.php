@@ -3,6 +3,7 @@
   <nav class="navbar">
     <a href="#" class="logo">
       <img src="././src/logo pfe.jpg" alt="Logo">
+      <link rel="stylesheet" href="././src/css/style.css">
     </a>
     <ul>
       <li><a href="#">Home</a></li>
