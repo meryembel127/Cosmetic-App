@@ -8,10 +8,18 @@ class ProductsController {
         $this->pdo = $pdo;
     }
 
-    public  function index(): void {
+    public function index(): void {
         $productModel = new Product($this->pdo);
         $products = $productModel->getAll();
         include './view/home.php';
+    }
+
+    public function products(): void {
+        include './view/products.php';
+    }
+
+    public function contact(): void {
+        include './view/contact.php';
     }
 
     public function store($data): void {
@@ -42,3 +50,4 @@ class ProductsController {
     }
 }
 ?>
+

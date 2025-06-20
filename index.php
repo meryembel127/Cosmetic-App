@@ -4,7 +4,19 @@ require_once './controller/ProductController.php';
 
 $controller = new ProductsController($pdo);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_GET['page'])) {
+    switch ($_GET['page']) {
+        case 'products':
+            $controller->products();
+            break;
+        case 'contact':
+            $controller->contact();
+            break;
+        default:
+            $controller->index();
+            break;
+    }
+} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['create'])) {
         $controller->store($_POST);
     } elseif (isset($_POST['update'])) {
@@ -18,3 +30,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $controller->index();
 }
 ?>
+

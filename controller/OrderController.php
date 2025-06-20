@@ -9,8 +9,6 @@ class OrderController {
         $orders = $this->orderModel->getAllOrders();
         require 'views/orders/index.php';
     }
-
-    // Affiche les détails d'une commande
     public function show($id) {
         $order = $this->orderModel->getOrderById($id);
         if (!$order) {
@@ -23,7 +21,6 @@ class OrderController {
         require 'views/orders/create.php';
     }
     public function store($data) {
-        // validation simple
         if (empty($data['customer_name']) || empty($data['product_id'])) {
             echo "Please fill all required fields";
             return;
