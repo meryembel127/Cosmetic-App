@@ -3,7 +3,6 @@ require_once './models/config/conn.php';
 require_once './controller/ProductController.php';
 
 $controller = new ProductsController($pdo);
-$controller->index();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['create'])) {

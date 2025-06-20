@@ -3,20 +3,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="././src/css/style.css">
+  <link rel="stylesheet" href=".././src/css/styles.css">
 </head>
 <body>
-   <header>
-        <nav class="navbar">
-          <a href="#" class="logo"><img src="././src/logo pfe.jpg" alt="">BEAUTY</a>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-        </nav>
-      </header>
+      <?php
+        require "../view/header.php";
+     ?>
  <div id="center">
     <div class="container">
 <form>

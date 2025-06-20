@@ -1,32 +1,21 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="././src/css/style.css">
-</head>
-<body>
-     <header>
-        <nav class="navbar">
-          <a href="#" class="logo"><img src="././src/logo pfe.jpg" alt="">BEAUTY</a>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
-        </nav>
-      </header>
+<?php
+?>
+     <?php
+        require __DIR__ . '/header.php';
+     ?>
        <div class="hero">
       <div class="content">
         <h1>Welcome to MR BEAUTY Your Destination for Premium Global Cosmetic Brands</h1>
         <p>Discover a world of beauty with our exclusive selection of high-end cosmetic products from the most renowned international <br> At MR BEAUTY, we are dedicated to bringing you the latest in skincare,  <br>– all in one place. Whether you're looking for timeless classics or trending beauty essentials, <br>our curated collection guarantees authenticity, quality, and elegance with every purchase.</p>
         <a href="produit.html" class="btn">Shop Now</a>
       </div>
-      
+      <?php
+        foreach ($products as $key => $value) {
+        }
+      ?>
      <div id="fin">
     <p>© 2025 Polyvalence. All rights reserved.</p>
     <p>Privacy Policy│Terms of servics│contact</p>
    </div>
-</body>
-</html>
+   <?php
+?>

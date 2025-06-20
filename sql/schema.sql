@@ -46,11 +46,3 @@ CREATE TABLE order_items (
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
-CREATE TABLE orders (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    product_id INT NOT NULL,
-    quantity INT DEFAULT 1,
-    total_price DECIMAL(10,2),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);

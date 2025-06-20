@@ -8,7 +8,7 @@ class ProductsController {
         $this->pdo = $pdo;
     }
 
-    public function index(): void {
+    public  function index(): void {
         $productModel = new Product($this->pdo);
         $products = $productModel->getAll();
         include './view/home.php';
